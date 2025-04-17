@@ -25,7 +25,12 @@ body, html {
 
 #berlin {
     background-image: url("/resources/La-Casa-De-Papel-Mask-Best-Wallpaper-83434berlin.jpg");
-    opacity: 20%;
+    opacity: 40%;
+}
+
+#tokyo {
+    background-image: url("/resources/tokyo3.png");
+    opacity: 40%;
 }
 
 h1 {
@@ -36,4 +41,9 @@ h1 {
     font-family: MyFont;
     font-size: 64px;
     position: relative;
+}
+
+.audio {
+    padding-top: 5vh;
+    text-align: center;
 }
