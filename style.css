@@ -6,7 +6,7 @@
 body, html {
     height: 100%;
     margin: 0;
-    background-color: black;
+    background-color: rgb(14, 14, 14);
   }
 
 .bkg {
@@ -20,6 +20,7 @@ body, html {
 
 #casa-de-papel {
     background-image: url("/resources/La-Casa-De-Papel-Mask-Background-Wallpaper-83433.jpg");
+    opacity: 60%;
 }
 
 #berlin {
