@@ -1,0 +1,38 @@
+@font-face {
+    font-family: MyFont;
+    src: url("resources/Coluna.otf");
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+  }
+
+.bkg {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+#casa-de-papel {
+    background-image: url("/resources/La-Casa-De-Papel-Mask-Background-Wallpaper-83433.jpg");
+}
+
+#berlin {
+    background-image: url("/resources/La-Casa-De-Papel-Mask-Best-Wallpaper-83434berlin.jpg");
+    opacity: 20%;
+}
+
+h1 {
+    margin:0;
+    padding-top: 20vh;
+    text-align: center;
+    color: white;
+    font-family: MyFont;
+    font-size: 64px;
+    position: relative;
+}
