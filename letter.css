@@ -242,6 +242,9 @@
         text-align: right;
         margin-top: 30px;
       }
+      .popup .content b {
+        color: #ce1107;
+      }
 
     .popup .content .signature .profe {
         margin-top: 0;
