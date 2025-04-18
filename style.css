@@ -39,9 +39,14 @@ body, html {
 }
 
 
-#el-profe {
+#el_profe {
     background-image: url("/resources/el-profe-extended.jpg");
     opacity: 50%;
+}
+
+#raquel {
+    background-image: url("/resources/raquel.jpg");
+    opacity: 30%;
 }
 
 #denver {

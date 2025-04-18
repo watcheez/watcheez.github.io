@@ -242,6 +242,10 @@
         font-size: medium;
       }
 
+      #popup-raquel p {
+        font-size: 16px;
+      }
+
       .popup .content .signature {
         text-align: right;
         margin-top: 30px;
