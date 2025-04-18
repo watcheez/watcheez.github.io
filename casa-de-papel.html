@@ -8,6 +8,13 @@
 </head>
 <body>
     <div id="casa-de-papel" class="bkg"></div>
-    <iframe class="audioplayer" src="/resources/bella-ciao-lyrics-money-heist.mp3" allow="autoplay" id="audio"></iframe>
+    <audio id="player" autoplay loop src="resources/bella-ciao-lyrics-money-heist.mp3"></audio>
 </body>
+<script>
+    document.addEventListener('click', musicPlay);
+    function musicPlay() {
+        document.getElementById('player').play();
+        document.removeEventListener('click', musicPlay);
+    }
+</script>
 </html>
