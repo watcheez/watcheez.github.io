@@ -204,8 +204,7 @@
         padding: 20px;
         background: #fff;
         border-radius: 5px;
-        width: 30%;
-        min-width: 600px;
+        min-width: 90%;
         position: relative;
         transition: all 5s ease-in-out;
       }
@@ -236,10 +235,12 @@
       .popup .content p {
         font-family: Letter;
         margin:5px;
+        font-size: small;
       }
 
       .popup .content .signature {
         text-align: right;
+        margin-top: 30px;
       }
 
     .popup .content .signature .profe {
