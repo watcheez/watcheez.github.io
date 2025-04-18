@@ -19,13 +19,13 @@ body, html {
 }
 
 #casa-de-papel {
-    background-image: url("/resources/La-Casa-De-Papel-Mask-Background-Wallpaper-83433.jpg");
+    background-image: url("/resources/la-casa-de-papel-realistic-extra.jpg");
     opacity: 60%;
 }
 
 #berlin {
     background-image: url("/resources/La-Casa-De-Papel-Mask-Best-Wallpaper-83434berlin.jpg");
-    opacity: 40%;
+    opacity: 20%;
 }
 
 #tokyo {
