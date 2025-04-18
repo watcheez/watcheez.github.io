@@ -77,7 +77,7 @@ h1 {
     max-width: 120px;
     border-radius: 10px;
     opacity: 20%;
-    top: 53vh;
+    top: 45vh;
     left: 14vw;
     transition: 
         opacity 2s,
@@ -88,6 +88,6 @@ h1 {
 #rebus-img:hover {
     opacity: 100%;
     max-width: 70vw;
-    transform: translate(-14vw,-43vh);
+    transform: translate(-14vw,-35vh);
     
 }
