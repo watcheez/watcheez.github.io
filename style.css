@@ -30,18 +30,23 @@ body, html {
 
 #tokyo {
     background-image: url("/resources/tokyo3.png");
-    opacity: 40%;
+    opacity: 50%;
 }
 
 #nairobi {
     background-image: url("/resources/nairobi-extended.jpg");
-    opacity: 40%;
+    opacity: 50%;
 }
 
 
 #el-profe {
     background-image: url("/resources/el-profe-extended.jpg");
-    opacity: 60%;
+    opacity: 50%;
+}
+
+#denver {
+    background-image: url("/resources/denver-extended.jpg");
+    opacity: 50%;
 }
 
 
@@ -64,7 +69,7 @@ h1 {
     opacity: 0%;
 }
 
-#rebus-div {
+.img-div {
     padding: 0px;
     margin: 0px;
     text-align: center;
@@ -90,4 +95,11 @@ h1 {
     max-width: 70vw;
     transform: translate(-18vw,-35vh);
     
+}
+
+#denver-img {
+    position: relative;
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 20px 0px;
 }
