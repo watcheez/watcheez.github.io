@@ -86,7 +86,7 @@ h1 {
 
 #rebus-img:hover {
     opacity: 100%;
-    max-width: 520px;
+    max-width: 70vw;
     transform: translateY(-30vh);
     
 }
