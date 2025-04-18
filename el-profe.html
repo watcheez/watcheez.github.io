@@ -10,6 +10,7 @@
 <body>
     <div id="el-profe" class="bkg"></div>
     <h1 style="padding-top: 10vh">El profesor</h1>
+    <audio id="player" autoplay loop src="resources/bella-ciao-lyrics-money-heist.mp3"></audio>
 
     <div style="top: 80%" class="letter-image">
         <div class="animated-mail">
@@ -55,4 +56,11 @@
         </div>
     </div>
 </body>
+<script>
+    document.addEventListener('click', musicPlay);
+    function musicPlay() {
+        document.getElementById('player').play();
+        document.removeEventListener('click', musicPlay);
+    }
+</script>
 </html>

@@ -33,6 +33,12 @@ body, html {
     opacity: 40%;
 }
 
+#nairobi {
+    background-image: url("/resources/nairobi-extended.jpg");
+    opacity: 40%;
+}
+
+
 #el-profe {
     background-image: url("/resources/el-profe-extended.jpg");
     opacity: 60%;
@@ -56,4 +62,31 @@ h1 {
 
 .audioplayer {
     opacity: 0%;
+}
+
+#rebus-div {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    position: relative;
+}
+
+
+#rebus-img {
+    position: relative;
+    max-width: 150px;
+    border-radius: 10px;
+    opacity: 20%;
+    top: 40vh;
+    transition: 
+        opacity 2s,
+        max-width 2s,
+        transform 2s;
+}
+
+#rebus-img:hover {
+    opacity: 100%;
+    max-width: 520px;
+    transform: translateY(-30vh);
+    
 }
