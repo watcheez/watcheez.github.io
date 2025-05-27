@@ -1,3 +1,8 @@
+@font-face {
+    font-family: MyFont;
+    src: url("Random Wednesday.otf");
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,7 +14,7 @@ body {
 
 .postcard {
   position: relative;
-  top: 50px;
+  top: 100px;
   width: 80%;
   background-color: #f7f7f7;
   margin: 0 auto;
@@ -30,14 +35,15 @@ body {
 h1 {
   margin-top: 10%;
   text-align: center;
-  font-size: 3em;
+  font-size: 8em;
   color: #f7f7f7;
   margin-bottom: -15px;
 }
 
 p {
   display: inline;
-  font-size: 2em;
+  font-size: 2.3em;
+  font-family: MyFont;
 }
 
 /*animation*/
