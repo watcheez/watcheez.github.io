@@ -4,8 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mailbox</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="letter.css">
 </head>
 <body>
+    <div id="mailbox" class="bkg"></div>
     <h1>Mailbox</h1>
+    <audio id="player" autoplay loop src="resources/bella-ciao-lyrics-money-heist.mp3"></audio>
+
+    <div class="letter-image">
+        <div class="animated-mail">
+            <a class="letter-wrapper" href="#popup-profe">
+                <div class="back-fold"></div>
+                <div class="letter">
+                    <div class="letter-border"></div>
+                    <div class="letter-title"></div>
+                    <div class="letter-context"></div>
+                    <div class="letter-stamp">
+                        <div class="letter-stamp-inner"></div>
+                    </div>
+                </div>
+                <div class="top-fold"></div>
+                <div class="body"></div>
+                <div class="left-fold"></div>
+            </a>
+        </div>
+        <div class="shadow"></div>
+      </div>
+
+      <div id="popup-profe" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div id="last-letter" class="content">
+                <h2>Cher ami,</h2>
+                <p>Jamais je n'aurais pu soupçonner ce secret que tu me cachais.</p>
+                <p>Moi qui naïvement pensais que tu étais un vigneron dévoué,</p>
+                <p>Je découvre qu'en réalite ce n'était qu'une couverture pour ton "vrai" traffic.</p>
+                <br>
+                <p>Tu ne peux plus me le cacher, j'ai entendu ton message vocal laissé à Chatchat.</p>
+                <p>Puis mes soupçons ce sont confirmé lorsque j'ai <span>ouvert ton coffret de ta dernière cuvée "Samantha's Temptation"</span></p>
+                <br>
+                <p>Je refuse de vivre plus longtemps sous le même toi qu'un mafieux.</p>
+                <p>Je vais livrer toutes les infos que j'ai recueillies à la police et ils t'arrêteront !</p>
+                <div class="signature">
+                    <p>A jamais, tocard.</p>
+                    <p class="profe">- Pauline Gomes</p>            
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<script>
+    document.addEventListener('click', musicPlay);
+    function musicPlay() {
+        document.getElementById('player').play();
+        document.removeEventListener('click', musicPlay);
+    }
+</script>
 </html>

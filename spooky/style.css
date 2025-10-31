@@ -1,0 +1,70 @@
+@font-face {
+    font-family: MyFont;
+    src: url("/resources/Scary\ Halloween\ Font.ttf");
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: rgb(14, 14, 14);
+  }
+
+.bkg {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+}
+
+#murder {
+    background-image: url("/resources/flower.jpg");
+    opacity: 25%;
+}
+
+#bloodprints {
+    background-image: url("/resources/bloodprints.jpg");
+    opacity: 25%;
+}
+
+#lou {
+    background-image: url("/resources/books.jpg");
+    opacity: 20%;
+}
+
+#matriochka {
+    background-image: url("/resources/matriochka.jpg");
+    opacity: 20%;
+}
+
+#mailbox {
+    background-image: url("/resources/mailbox.jpg");
+    opacity: 20%;
+}
+
+h1 {
+    margin:0;
+    padding-top: 20vh;
+    text-align: center;
+    color: white;
+    font-family: MyFont;
+    font-size: 64px;
+    position: relative;
+}
+
+.audio {
+    padding-top: 5vh;
+    text-align: center;
+}
+
+.audioplayer {
+    opacity: 0%;
+}
+
+.img-div {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    position: relative;
+}
