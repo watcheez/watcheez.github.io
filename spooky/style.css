@@ -68,3 +68,10 @@ h1 {
     text-align: center;
     position: relative;
 }
+
+#melody-img {
+    position: relative;
+    max-width: 90%;
+    border-radius: 10px;
+    margin: 20px 0px;
+}
