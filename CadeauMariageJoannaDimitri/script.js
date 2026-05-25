@@ -1,3 +1,19 @@
+// Enable music playback on first user interaction (touch or click)
+window.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('wedding-audio');
+    if (!audio) return;
+    let played = false;
+    function playAudioOnce() {
+        if (!played) {
+            audio.play().catch(() => {});
+            played = true;
+            window.removeEventListener('touchstart', playAudioOnce);
+            window.removeEventListener('mousedown', playAudioOnce);
+        }
+    }
+    window.addEventListener('touchstart', playAudioOnce, { once: true });
+    window.addEventListener('mousedown', playAudioOnce, { once: true });
+});
 // Particle effect
 window.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('particles');
@@ -17,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', resize);
 
     // Particle settings
-    const PARTICLE_COUNT = 60;
+    const PARTICLE_COUNT = 100;
     const particles = [];
     for (let i = 0; i < PARTICLE_COUNT; i++) {
         particles.push({
