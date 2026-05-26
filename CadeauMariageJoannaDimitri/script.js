@@ -1,18 +1,36 @@
-// Enable music playback on first user interaction (touch or click)
+// Enable music playback on first user interaction (touch, click, or mouse)
 window.addEventListener('DOMContentLoaded', () => {
     const audio = document.getElementById('wedding-audio');
     if (!audio) return;
     let played = false;
+
+    // Ensure audio is loaded (for iOS/Safari)
+    function ensureAudioLoaded() {
+        if (audio.readyState < 2) {
+            audio.load();
+        }
+    }
+
     function playAudioOnce() {
         if (!played) {
-            audio.play().catch(() => {});
-            played = true;
+            ensureAudioLoaded();
+            // Try to play and handle promise for all browsers
+            const playPromise = audio.play();
+            if (playPromise !== undefined) {
+                playPromise.catch(() => {}).then(() => {
+                    played = true;
+                });
+            } else {
+                played = true;
+            }
             window.removeEventListener('touchstart', playAudioOnce);
             window.removeEventListener('mousedown', playAudioOnce);
+            window.removeEventListener('click', playAudioOnce);
         }
     }
     window.addEventListener('touchstart', playAudioOnce, { once: true });
     window.addEventListener('mousedown', playAudioOnce, { once: true });
+    window.addEventListener('click', playAudioOnce, { once: true });
 });
 // Particle effect
 window.addEventListener('DOMContentLoaded', () => {
@@ -81,6 +99,5 @@ window.addEventListener('DOMContentLoaded', () => {
     animate();
 });
 function contributeUrne() {
-    // Remplacez ce lien par votre vrai lien PayPal.me
-    window.open('https://www.paypal.me/votreLienIci', '_blank');
+    window.open('https://paypal.me/UrneMariageJoDim', '_blank');
 }

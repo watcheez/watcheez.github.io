@@ -62,9 +62,9 @@ header {
 
 .urne-section h2 {
     font-family: 'Great Vibes', cursive;
-    font-size: 2em;
+    font-size: 2.4em;
     color: #7a5c2e;
-    margin-bottom: 12px;
+    margin: 12px auto;
 }
 
 .urne-section p {
@@ -75,7 +75,7 @@ header {
 .urne-section hr {
     border: none;
     border-top: 1px solid #e3cfa2;
-    margin: 18px 0 10px 0;
+    margin: 18px auto 10px auto;
     width: 60%;
 }
 
@@ -126,7 +126,7 @@ header {
 .indications h3 {
     font-family: 'Great Vibes', cursive;
     color: #7a5c2e;
-    font-size: 1.4em;
+    font-size: 2.4em;
     margin-bottom: 18px;
 }
 .indication-list {
@@ -168,7 +168,7 @@ footer {
 }
 .merci-infini {
     font-family: 'Great Vibes', cursive;
-    font-size: 1.3em;
+    font-size: 2.6em;
     color: #7a5c2e;
     margin-top: 2px;
 }
